@@ -6,7 +6,7 @@ CORRUPTED=corrupted.bin
 DECODED=decoded.mp4
 
 if [ ! -f ${INPUT} ]; then
-    curl -o input.mp4 https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+    curl -o ${INPUT} https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
 fi
 
 gcc hamming.c -O3 -o hamming
